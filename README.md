@@ -1,0 +1,1 @@
+I am coding a program with a grid so that I may draw on the screen with a etch-a-sketch like program. I will be using DOM manipulation.
