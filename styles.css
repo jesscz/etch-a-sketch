@@ -2,7 +2,6 @@
     max-width: 900px;
     color: blueviolet;
     border-color: black;
-   
 }
 .gridSquare {
     display: inline-block;
@@ -10,10 +9,17 @@
     border: 1px solid chartreuse;
     height: 35px;
     width: 35px;
-    padding: -1px;  
+    margin: -2px -1px;
+    
 }
-.gridSquare:hover {
-    background-color: cornflowerblue;
+.gridSquareHovered {
+    display: inline-block;
+    color: blueviolet;
+    background-color: brown;
+    border: 1px solid chartreuse;
+    height: 35px;
+    width: 35px; 
+    margin: -2px -1px;
 }
 #startBtn {
     margin: 20px;
