@@ -1,26 +1,66 @@
+div {
+    width: 100%;
+}
+body {
+    display: grid;
+    grid-template-areas:
+    "nav content side";
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-gap: 10px;
+
+  height: 95vh;
+}
+button {
+    margin: 0 auto;
+    display: block;
+}
 .row {
     max-width: 900px;
-    color: blueviolet;
-    border-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1;
+}
+.row:last-child {
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+.gridSquare, .gridSquareHovered {
+    display: flex;
+    min-height: 4px;
+    min-width: 4px;
+    flex: 1 1 100%;
+    flex-basis: fit-content;
+    flex-basis: 100%;
 }
 .gridSquare {
-    display: inline-block;
     color: cadetblue;
-    border: 1px solid chartreuse;
-    height: 35px;
-    width: 35px;
-    margin: -2px -1px;
-    
+    border-top: 1px solid rgb(184, 184, 184);
+    border-left: 1px solid rgb(184, 184, 184);
 }
 .gridSquareHovered {
-    display: inline-block;
     color: blueviolet;
-    background-color: brown;
-    border: 1px solid chartreuse;
-    height: 35px;
-    width: 35px; 
-    margin: -2px -1px;
+    background-color: blueviolet;
+    border-top: 1px solid blueviolet;
+    border-left: 1px solid blueviolet;
 }
-#startBtn {
-    margin: 20px;
+.gridSquare:last-child { 
+    border-right: 1px solid rgb(184, 184, 184);
+  }
+.gridSquareHovered:last-child {
+    border-right: 1px solid blueviolet;
 }
+#container {
+    display: flex;
+    height: 590px;
+    width: 590px;
+    overflow: auto;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+}
+#left, #right {
+    display: flex;
+    align-items: center;
+  }
