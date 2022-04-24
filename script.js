@@ -85,8 +85,8 @@ function randomColor() {
 
 
 function blackGradation(hovers) {
-    let perc = abs((hovers*10)-100);
-    let color = "hsl(0, 0%, "+ (perc) +"%)";
+    let perc = Math.abs((hovers*10)-100);
+    let color = `hsl(0, 0%, ${perc}%)`;
     return color;
 }
 
