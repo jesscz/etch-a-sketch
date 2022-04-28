@@ -2,14 +2,12 @@ const container = document.getElementById("container");
 const leftContainer = document.getElementById("left");
 const rightContainer = document.getElementById("right");
 
-const resetBtn = document.createElement("button");
-resetBtn.innerHTML = "Reset"
+const resetBtn = document.getElementById("reset-button");
 const rainbowBtn = document.getElementById("rainbow");
 const bnwBtn = document.getElementById("black");
 const eraserBtn = document.getElementById("eraser");
 let type = "default";
 
-rightContainer.appendChild(resetBtn);
 
 start();
 setBoxShadow();

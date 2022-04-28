@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,300;1,400&display=swap');
 div {
     width: 100%;
 }
@@ -10,6 +11,8 @@ body {
 
   grid-gap: 10px;
 
+  font-family: Raleway, Helvetica, sans-serif;
+
   height: 95vh;
   background-color: rgb(238, 223, 248);
 }
@@ -21,6 +24,7 @@ button {
     border: none;
     color: white;
     padding: 15px 32px;
+    font-family: Raleway, Helvetica, sans-serif;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -53,9 +57,10 @@ button {
     flex-direction: column;
     text-align: center;
     vertical-align: top;
-    font-family: Arial, Helvetica, sans-serif;
 }
 #left, #right {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
